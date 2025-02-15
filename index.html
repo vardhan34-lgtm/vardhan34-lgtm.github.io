@@ -3,59 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Medical information and resources">
-    <title>Medical Information Hub</title>
+    <meta name="description" content="Medical information and health insights">
+    <title>MedVita - Medical Information and Insights</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f9f9f9;
+            color: #333;
         }
         header {
-            background-color: #007bff;
+            background-color: #004085;
             color: white;
-            text-align: center;
             padding: 20px;
+            text-align: center;
         }
         header h1 {
+            font-size: 2.5rem;
             margin: 0;
         }
         nav {
-            text-align: center;
-            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: #343a40;
         }
         nav a {
-            margin: 0 15px;
-            text-decoration: none;
             color: white;
-            font-size: 1.2rem;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
         }
         main {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        section {
-            margin-bottom: 40px;
+        .post {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
         }
-        section h2 {
-            color: #007bff;
-            margin-bottom: 20px;
+        .post h2 {
+            color: #004085;
+            font-size: 2rem;
         }
-        section p {
-            font-size: 1.1rem;
+        .post p {
             line-height: 1.6;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .post a {
+            color: #004085;
+            text-decoration: none;
         }
         footer {
-            background-color: #007bff;
+            background-color: #343a40;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: relative;
+            padding: 20px;
         }
         footer img {
             width: 50px;
@@ -64,14 +74,18 @@
         footer a {
             color: white;
             text-decoration: none;
+            margin-top: 10px;
+            display: block;
         }
         @media (max-width: 768px) {
             main {
                 padding: 10px;
             }
+            nav {
+                flex-direction: column;
+            }
             nav a {
-                display: block;
-                margin: 10px 0;
+                margin: 5px 0;
             }
         }
     </style>
@@ -79,35 +93,42 @@
 <body>
 
     <header>
-        <h1>Medical Information Hub</h1>
-        <nav>
-            <a href="#cardiology">Cardiology</a>
-            <a href="#neurology">Neurology</a>
-            <a href="#general-health">General Health</a>
-        </nav>
+        <h1>MedVita - Medical Insights</h1>
     </header>
 
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Health Topics</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
     <main>
-        <section id="cardiology">
-            <h2>Cardiology</h2>
-            <p>Learn about heart health, conditions, treatments, and more. Get the latest updates on cardiovascular research and care.</p>
-        </section>
+        <article class="post">
+            <h2>Understanding the Importance of Regular Health Check-ups</h2>
+            <p>Regular health check-ups can help detect potential health issues before they become serious. Early detection gives you the best chance for getting the right treatment quickly...</p>
+            <a href="#">Read more</a>
+        </article>
 
-        <section id="neurology">
-            <h2>Neurology</h2>
-            <p>Dive deep into brain health, neurological disorders, and cutting-edge treatments. Discover ways to maintain and improve brain function.</p>
-        </section>
+        <article class="post">
+            <h2>How to Maintain a Healthy Diet</h2>
+            <p>Maintaining a healthy diet is key to overall health and well-being. Learn how to balance your meals, understand nutrition labels, and make better choices...</p>
+            <a href="#">Read more</a>
+        </article>
 
-        <section id="general-health">
-            <h2>General Health</h2>
-            <p>Explore a wide range of topics covering general health, well-being, and preventive measures to live a healthier life.</p>
-        </section>
+        <article class="post">
+            <h2>Sleep and Mental Health: What You Should Know</h2>
+            <p>Good sleep is essential for mental health. Find out how sleep affects your brain function, mood, and overall cognitive abilities, and get tips on improving your sleep...</p>
+            <a href="#">Read more</a>
+        </article>
     </main>
 
     <footer>
-        <p>&copy; 2025 Medical Information Hub. All rights reserved.</p>
+        <p>&copy; 2025 MedVita. All rights reserved.</p>
         <a href="https://vardhan34-lgtm.github.io/">
-            <img src="https://via.placeholder.com/50" alt="Link back">
+            <img src="img.png" alt="Link back to main site">
+            <span>Return to Main Site</span>
         </a>
     </footer>
 
